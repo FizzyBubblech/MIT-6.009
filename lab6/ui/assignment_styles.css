@@ -1,0 +1,17 @@
+#s04-ribbon {
+  background-color: #795548;
+}
+
+#s04-main {
+  flex-direction: column;
+  align-items: center;
+}
+
+input, .s04_editor, .lab_content, .CodeMirror {
+  width: 90%;
+  max-width: 50em;
+}
+
+#current_test, #best_coins {
+  font-weight: bold;
+}
