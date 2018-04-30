@@ -1,0 +1,200 @@
+#s04-ribbon {
+  background-color: #389ce2;
+}
+
+#s04-main {
+  flex-direction: column;
+  align-items: center;
+}
+
+main > hr {
+  width: 128px;
+}
+
+main {
+  text-align: center;
+}
+
+main > * {
+  max-width: 80%;
+}
+
+.options {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+  min-width: 1000px;
+  min-height: 120%;
+  padding: 20px;
+}
+
+.student {
+  display: inline-block;
+  margin: 5px;
+  border-radius: 15px;
+  border: 2px transparent solid;
+  cursor: pointer;
+}
+
+.student.clicked {
+  border: 2px black solid;
+}
+
+.shadow-student-ball-container {
+  position: absolute;
+  /* display: none; */
+}
+
+.student-ball, .shadow-student-ball {
+  border-radius: 10px;
+  width: 0px;
+  height: 0px;
+  border: 10px slateblue solid; 
+  background: slateblue;
+}
+
+.student-ball.bad-room {
+  border: 10px #E0E0E0 solid; 
+}
+
+.room-container {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: text-top;
+}
+
+.room-container .counter {
+  font-size: 24px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.room-container .counter .overfull {
+  display: none;
+}
+
+.room, 
+.overflow {
+  margin: 0 auto;
+}
+
+.room {
+  border:2px black solid;
+  border-radius: 5px;
+  
+}
+
+.room.overfull {
+  border:2px crimson solid;
+}
+
+.assigned-room {
+  font-weight: bold;
+}
+
+.starter {
+  width: 64%;
+  display: inline-block;
+  min-height: 150px;
+  background: #E0E0E0;
+  text-align: center;
+  vertical-align: text-top;
+  border-radius: 5px;
+  border: 2px black solid;
+  box-sizing: border-box;
+}
+
+.info {
+  display: inline-block;
+  width: 35%;
+  vertical-align: text-top;
+  padding: 10px;
+  min-height: 150px;
+  background: slateblue;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px black solid;
+  box-sizing: border-box;
+}
+
+.info table {
+  width: 100%;
+}
+
+.info td {
+  width: 33.3%;
+  min-width: 33.3%;
+  vertical-align: text-top;
+  color: #E0E0E0;
+}
+
+.rooms {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reset {
+  display: none;
+}
+
+.mdl-button.btn {
+  border: 2px solid black;
+  background: #E0E0E0;
+  border-radius: 5px;
+  margin: 2px 5px;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: none;
+  text-transform: none;
+}
+
+.load .select, .load .select-apply {
+  display: inline-block;
+}
+
+.assign.mdl-button.btn, 
+.save.mdl-button.btn, 
+.load .select-apply .mdl-button.btn {
+  background: slateblue;
+  color: #E0E0E0;
+}
+
+.no-assignments-found {
+  visibility: hidden;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  color: crimson;
+}
+
+.loader {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  border: 10px solid #E0E0E0;
+  border-top: 10px solid slateblue;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1.25s linear infinite;
+  box-sizing: content-box;
+  margin: -40px -40px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#rpc_status {
+  order: 99;
+}
