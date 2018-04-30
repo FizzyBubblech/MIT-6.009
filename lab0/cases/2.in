@@ -1,0 +1,3 @@
+{"test": "step(step(gas_3)) example", 
+"function": "step",
+"input": {"gas": {"width": 3, "state": [["w"], ["u", "w"], ["w"], ["w"], [], ["w"], ["w"], ["u", "d"], ["w"], ["w"], ["w"], ["w"]], "height": 4}}}
